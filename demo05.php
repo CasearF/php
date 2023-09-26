@@ -1,7 +1,10 @@
 <?php
-$arr = array(" 张笑天","陆伟","毕云红","冯国帅");
+$arr = array("中国","内蒙古","锡林郭勒职业学院","信息系人数","500");
 echo $arr[1];
-for ($i=0; $i <= 3; $i++) {
+for ($i=0; $i <= 4; $i++) {
     echo $arr[$i];
+    echo "<br>";
+
 }
+echo count($arr);
 ?>
