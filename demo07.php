@@ -21,7 +21,7 @@
     #echo "$banji $name $xuehao";
     $shuzu = array($xuehao, $name, $banji);
     for ($i = 0; $i < count($shuzu); $i++) {
-        #echo $shuzu[$i];
+        #echo $shuzu[$i
     }
     ?>
     <table border=1px>
