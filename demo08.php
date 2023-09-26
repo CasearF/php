@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +12,7 @@
         }
     </style>
 </head>
+
 <body>
     <?php
     $xuehao = $_POST["xuehao"];
@@ -26,11 +28,12 @@
         </tr>";
     echo "<tr>";
     for ($i = 0; $i < count($shuzu); $i++) {
-        echo "<td class='a'>" . ($i + 1) . "</td>";
-        echo "<td class='a'>" . $shuzu[$i] . "</td>";
+        #echo ($i + 1) ;
+        echo "<td class='a'>" . $i . $shuzu[$i] . "</td>";
     }
     echo "</tr>";
     echo "</table>";
     ?>
 </body>
+
 </html>
