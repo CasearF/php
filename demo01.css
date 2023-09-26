@@ -1,0 +1,12 @@
+.wai{
+    width: 900px;
+    height: 30%;
+    background-color: rgb(151, 151, 151);
+}
+.a{
+    margin: 0px;
+    width: 300px;
+    text-align:center;
+    border: 1px solid #000;
+}
+
