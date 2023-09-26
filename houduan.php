@@ -11,4 +11,5 @@ if ($danxuan == true) {
 } else {
     echo "您还未同意协议，请勾选同意协议";
 }
+#
 ?>
