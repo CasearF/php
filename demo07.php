@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
@@ -7,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .a {
+        td {
             width: 150px;
             height: 30px;
         }
@@ -26,14 +25,14 @@
     "    
     <table border=1px>
     <tr>
-        <td class='a'>序号</td>
-        <td class='a'>学号</td>
-        <td class='a'>姓名</td>
-        <td class='a'>班级</td>
+        <td>序号</td>
+        <td>学号</td>
+        <td>姓名</td>
+        <td>班级</td>
     </tr>
     ";
     for ($i = 0; $i < count($shuzu); $i++) {
-        echo "<td class='a'>" . $shuzu[$i] . "</td>";
+        echo "<td>" . $shuzu[$i] . "</td>";
         #$xuhao++;
     }
     echo "</tr>";
