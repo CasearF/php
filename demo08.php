@@ -1,39 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        .a {
-            width: 150px;
-            height: 30px;
-        }
-    </style>
-</head>
-
-<body>
-    <?php
-    $xuehao = $_POST["xuehao"];
-    $name = $_POST["name"];
-    $banji = $_POST["banji"];
-    $shuzu = array($xuehao, $name, $banji);
-    echo "<table border=1px>
-        <tr>
-            <td class='a'>序号</td>
-            <td class='a'>学号</td>
-            <td class='a'>姓名</td>
-            <td class='a'>班级</td>
-        </tr>";
-    echo "<tr>";
-    for ($i = 0; $i < count($shuzu); $i++) {
-        #echo ($i + 1) ;
-        echo "<td class='a'>" . $i . $shuzu[$i] . "</td>";
-    }
-    echo "</tr>";
-    echo "</table>";
-    ?>
-</body>
-
-</html>
+格式化参数	描述	示例
+d	月份中的第几天，两位数字，不足补零	01 - 31
+D	星期中的缩写名称	Mon - Sun
+j	月份中的第几天，不带前导零	1 - 31
+l	星期的完整名称	Monday - Sunday
+S	月份中的英语序数后缀，2 个字符	st, nd, rd 或者 th
+w	星期中的数字表示，0 表示周日，6 表示周六	0 - 6
+z	年份中的第几天，0 到 365	0 - 365
+F	月份的完整名称	January - December
+m	数字表示的月份，带前导零	01 - 12
+M	月份的缩写名称	Jan - Dec
+n	数字表示的月份，不带前导零	1 - 12
+Y	4 位数字完整表示的年份	例如：1999 或 2003
+y	2 位数字表示的年份	例如：99 或 03
+a	小写的上午和下午值	am 或 pm
+A	大写的上午和下午值	AM 或 PM
+g	小时，12 小时格式，不带前导零	1 - 12
+G	小时，24 小时格式，不带前导零	0 - 23
+h	小时，12 小时格式，带前导零	01 - 12
+H	小时，24 小时格式，带前导零	00 - 23
+i	分钟，带前导零	00 - 59
+s	秒数，带前导零	00 - 59
+O	与格林威治时间相差的小时数	+0200
+P	与格林威治时间相差的小时数，带冒号分隔符	+02:00
+T	时区缩写	EST, MDT ...
+U	Unix 时间戳
